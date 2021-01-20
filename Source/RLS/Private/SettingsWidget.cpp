@@ -9,9 +9,7 @@ bool USettingsWidget::GetInvertAxis(const FName axisName) const {
 }
 
 void USettingsWidget::SetInvertAxis(const FName axisName, bool invert) {
-	auto playerInput = GetWorld()->GetFirstPlayerController()->PlayerInput;
 	if (invert != GetInvertAxis(axisName)) {
-		playerInput->InvertAxis(axisName);
+		GetWorld()->GetFirstPlayerController()->PlayerInput->InvertAxis(axisName);
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 }
