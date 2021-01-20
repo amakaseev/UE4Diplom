@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "RLS (Debug)",
+			"request": "launch",
+			"preLaunchTask": "RLS Mac Debug Build",
+			"program": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLS (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "RLS Mac DebugGame Build",
+			"program": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLS (Development)",
+			"request": "launch",
+			"preLaunchTask": "RLS Mac Development Build",
+			"program": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLS (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "RLS Mac Shipping Build",
+			"program": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLS (Test)",
+			"request": "launch",
+			"preLaunchTask": "RLS Mac Test Build",
+			"program": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLSEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "RLSEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLSEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "RLSEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "RLSEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "RLSEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.26"
+		}
+	]
+}

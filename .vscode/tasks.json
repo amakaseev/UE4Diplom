@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "RLS Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"Mac",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Shipping",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLS IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLS IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLS",
+				"IOS",
+				"Test",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLSEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Debug",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLSEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RLSEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "RLSEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RLSEditor",
+				"Mac",
+				"Development",
+				"/Users/hazed/Documents/Unreal Projects/UE4Diplom/RLS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		}
+	]
+}
