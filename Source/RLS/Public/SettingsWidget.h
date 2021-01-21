@@ -7,16 +7,22 @@
 #include "SettingsWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class RLS_API USettingsWidget : public UUserWidget
 {
-	GENERATED_BODY()
+  GENERATED_BODY()
 
-    UFUNCTION(BlueprintPure, Category = "Input")
-    bool GetInvertAxis(const FName axisName) const;
+  UFUNCTION(BlueprintPure, Category = "Input")
+  bool GetInvertAxis(const FName axisName) const;
 
-    UFUNCTION(BlueprintCallable, Category = "Input")
-    void SetInvertAxis(const FName axisName, bool invert);
+  UFUNCTION(BlueprintCallable, Category = "Input")
+  void SetInvertAxis(const FName axisName, bool invert);
+
+  UFUNCTION(BlueprintPure, Category = "Input")
+  float GetScaleAxis(const FName axisName) const;
+
+  UFUNCTION(BlueprintCallable, Category = "Input")
+  void SetScaleAxis(const FName axisName, float scale);
 };

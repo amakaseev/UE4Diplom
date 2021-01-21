@@ -1,13 +1,16 @@
 {
-	"configurations": [
-		{
-			"name": "RLSEditor Editor Mac Development (RLS)",
-			"intelliSenseMode": "clang-x64",
-			"macFrameworkPath": [
-				"/System/Library/Frameworks",
-				"/Library/Frameworks"
-			],
-			"compileCommands": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/.vscode/compileCommands_RLS.json"
-		}
-	]
+    "configurations": [
+        {
+            "name": "RLSEditor Editor Mac Development (RLS)",
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/hazed/Documents/Unreal Projects/UE4Diplom/.vscode/compileCommands_RLS.json",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }
